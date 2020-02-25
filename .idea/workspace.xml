@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0929a17c-c1fb-426b-917a-c434a16bcddc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="yWRVcSVq" />
+  </component>
+  <component name="ProjectId" id="1YIxKpyBrbO9IkZWOQTDW1ayzf9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_232-ea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0929a17c-c1fb-426b-917a-c434a16bcddc" name="Default Changelist" comment="" />
+      <created>1582643848400</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582643848400</updated>
+      <workItem from="1582643851464" duration="1240000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="180" key="#Project_Structure" timestamp="1582643868246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="556" y="180" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1582643868246" />
+    <state x="668" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582644242705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582644242705" />
+    <state x="744" y="276" key="FileChooserDialogImpl" timestamp="1582643925839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582643925839" />
+    <state x="795" y="413" key="Github.ShareDialog" timestamp="1582645190798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="413" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582645190798" />
+    <state x="425" y="121" key="new project wizard" timestamp="1582643864876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="425" y="121" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582643864876" />
+  </component>
+</project>
