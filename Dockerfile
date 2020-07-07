@@ -6,7 +6,7 @@ ARG TOOLCHAIN=stable
 
 # The OpenSSL version to use. We parameterize this because many Rust
 # projects will fail to build with 1.1.
-ARG OPENSSL_VERSION=1.0.2r
+ARG OPENSSL_VERSION=1_0_2r
 
 # Make sure we have basic dev tools for building C libraries.  Our goal
 # here is to support the musl-libc builds and Cargo builds needed for a
@@ -17,8 +17,8 @@ ARG OPENSSL_VERSION=1.0.2r
 # any more software.
 #
 # `mdbook` is the standard Rust tool for making searchable HTML manuals.
-RUN apt-get update && \
-    apt-get install -y \
+RUN apt-get update
+RUN apt-get install -y \
         build-essential \
         cmake \
         curl \
@@ -34,9 +34,17 @@ RUN apt-get update && \
         sudo \
         xutils-dev \
         gcc-multilib-arm-linux-gnueabihf \
-        && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    useradd rust --user-group --create-home --shell /bin/bash --groups sudo && \
+        software-properties-common
+RUN yes "" | add-apt-repository ppa:git-core/ppa && apt update && yes "y" | apt install -y git
+RUN apt install -y crossbuild-essential-arm64 debhelper
+
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add && \
+	add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y && \
+	apt-get update && \
+	apt-cache policy docker-ce && \
+	apt-get install -y docker-ce maven
+
+RUN useradd rust --user-group --create-home --shell /bin/bash --groups sudo && \
     MDBOOK_VERSION=0.2.1 && \
     curl -LO https://github.com/rust-lang-nursery/mdBook/releases/download/v$MDBOOK_VERSION/mdbook-v$MDBOOK_VERSION-x86_64-unknown-linux-musl.tar.gz && \
     tar xf mdbook-v$MDBOOK_VERSION-x86_64-unknown-linux-musl.tar.gz && \
@@ -88,8 +96,8 @@ RUN echo "Building OpenSSL" && \
     sudo ln -s /usr/include/x86_64-linux-gnu/asm /usr/local/musl/include/asm && \
     sudo ln -s /usr/include/asm-generic /usr/local/musl/include/asm-generic && \
     cd /tmp && \
-    curl -LO "https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz" && \
-    tar xvzf "openssl-$OPENSSL_VERSION.tar.gz" && cd "openssl-$OPENSSL_VERSION" && \
+    curl -LO "https://github.com/openssl/openssl/archive/OpenSSL_$OPENSSL_VERSION.tar.gz" && \
+    tar xvzf "OpenSSL_$OPENSSL_VERSION.tar.gz" && cd "openssl-OpenSSL_$OPENSSL_VERSION" && \
     env CC=musl-gcc ./Configure no-shared no-zlib -fPIC --prefix=/usr/local/musl -DOPENSSL_NO_SECURE_MEMORY linux-x86_64 && \
     env C_INCLUDE_PATH=/usr/local/musl/include/ make depend && \
     env C_INCLUDE_PATH=/usr/local/musl/include/ make && \
@@ -141,5 +149,3 @@ RUN cargo install -f cargo-audit && \
     cargo install -f cargo-deny && \
     rm -rf /usr/local/.cargo/registry/ && \
     rustup target add x86_64-unknown-linux-musl
-
- 

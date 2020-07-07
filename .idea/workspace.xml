@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0929a17c-c1fb-426b-917a-c434a16bcddc" name="Default Changelist" comment="" />
+    <list default="true" id="0929a17c-c1fb-426b-917a-c434a16bcddc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KonanWorkspace">
     <executables />
@@ -14,9 +21,9 @@
     <option name="directoryName" value="yWRVcSVq" />
   </component>
   <component name="ProjectId" id="1YIxKpyBrbO9IkZWOQTDW1ayzf9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -25,6 +32,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8.0_232-ea" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -45,11 +59,15 @@
       <option name="presentableId" value="Default" />
       <updated>1582643848400</updated>
       <workItem from="1582643851464" duration="1240000" />
+      <workItem from="1587389972696" duration="770000" />
+      <workItem from="1587482217531" duration="1182000" />
+      <workItem from="1593614714628" duration="904000" />
+      <workItem from="1593857120695" duration="16877000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="556" y="180" key="#Project_Structure" timestamp="1582643868246">
